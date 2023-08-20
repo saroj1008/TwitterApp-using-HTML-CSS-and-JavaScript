@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./resources/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="home.js" type="text/javascript"></script>
+    <title>Home/X</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-column">
+            <img src="https://abs.twimg.com/favicons/twitter.ico" alt="Twitter Logo">
+            <button><i class="fas fa-home"></i> Home</button>
+            <button><i class="fas fa-search"></i> Explore</button>
+            <button><i class="fas fa-bell"></i> Notifications</button>
+            <button><i class="fas fa-envelope"></i> Messages</button>
+            <button><i class="fas fa-list"></i> Lists</button>
+            <button><i class="fas fa-bookmark"></i> Bookmark</button>
+            <button><i class="fas fa-users"></i> Community</button>
+            <button><i class="fas fa-check-circle"></i> Verified</button>
+            <button id="profile"><i class="fas fa-user"></i> Profile</button>
+            <button><i class="fas fa-ellipsis-h"></i> More</button>
+            <div id="userWelcome" class="user-welcome-section">
+            </div>
+            <button id="logout-btn" class="logout-btn"><i class="fas fa-sign-out-alt"></i> Logout</button>
+        </div>
+        <div class="middle-column">
+            <div class="post-section">
+                <h3>Home</h3>
+                <textarea id="newPost" placeholder="What's happening?"></textarea>
+                <button id="addPost">Tweet</button>
+            </div>
+            <div id="userPost" class="other-user-post">
+                </br>
+            </div>
+        </div>
+        <div class="right-column">
+            <div class="search-section">
+                <input type="text" placeholder="Search for users..." class="search-bar">
+            </div>
+            <h4>Suggested Follows</h4>
+            <ul id="userList" class="suggested-follows">
+            </ul>
+
+        </div>
+        <div class="comment-popup" id="commentPopup">
+            <div class="comment-form">
+                <textarea placeholder="Write a comment..." id="commentTextarea"></textarea>
+                <button id="submitComment" onclick="submitComment()">Comment</button>
+                <button onclick="closeCommentPopup()">Close</button>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
